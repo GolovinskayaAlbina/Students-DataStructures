@@ -10,7 +10,7 @@ Train::Train()
 
 Train::~Train()
 {
-	_current = NULL;
+
 }
 
 void Train::Add(int value)
