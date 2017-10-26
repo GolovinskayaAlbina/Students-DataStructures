@@ -2,8 +2,9 @@
 #include "Train.h"
 
 
-Train::Train()
+Train::Train(ILogger* logger)
 {
+	_logger = logger;
 	_current = NULL;
 }
 
@@ -33,6 +34,7 @@ int Train::Count()
 {
 	if (_current == NULL)
 	{
+		_logger->Information("Train has no carriages");
 		return 0;
 	}
 	
