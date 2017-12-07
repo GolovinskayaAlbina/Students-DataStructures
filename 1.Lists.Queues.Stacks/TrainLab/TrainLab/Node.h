@@ -1,7 +1,8 @@
 #pragma once
 struct  Node
 {
-	bool light;
-	Node* next;
-	Node* prev;
+	Node(bool ligth);
+	bool Light;
+	Node* Next;
+	Node* Prev;
 };
