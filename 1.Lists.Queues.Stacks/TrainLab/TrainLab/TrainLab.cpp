@@ -7,7 +7,7 @@
 int main()
 {
 	LoggerFactory factory;
-	ILogger* logger = factory.Create(File);
+	ILogger* logger = factory.Create(Console);
 	Train train(logger);
 	train.Count();
 

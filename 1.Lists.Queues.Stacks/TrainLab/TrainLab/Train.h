@@ -4,13 +4,12 @@
 
 class Train
 {
-private:
 	ILogger* _logger;
 	Node* _current;
 public:
 	Train(ILogger* logger);
 	~Train(); 
-	void Add(int value);
+	void Add(bool light);
 	void Print();
 	int Count();
 };
